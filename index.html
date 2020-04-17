@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>广州大学智慧交通与安全研究中心</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/b_style.css">
+  <script type="text/javascript" src="./js/jQuery1.7.js"></script>
+  <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/jquery.event.drag-1.5.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.touchSlider.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/index.vsb.css">
+  <meta name="keywords" content="广州大学智慧交通与安全研究中心">
+</head>
+<body>
+  <div class="headerWrap_wc">
+    <div class="header w1200 cleafix">
+      <div class="headL fl">
+        <a href="./index.html" class="logo"><img src="./img/logo.png"></a>
+      </div>
+      <div class="navs headR fr">
+        <ul class="nav innav">
+          <li class="mainmenu">
+            <a href="./index.html">首页</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./info/intro.html">中心概况</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./members.html">团队成员</a>
+          </li>
+          <!-- <li class="mainmenu">
+            <a href="./events.html">学术活动</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./notice.html">通知公告</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="navtel w1200 cleafix">
+      <div class="logosmall fl">
+        <a href="./index.html" class="logo"><img src="./img/logo.png"></a>
+      </div>
+      <nav id="cbp-spmenu-s" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+        <div class="chlogo">
+          <a href="./index.html" class="logo"><img src="./img/logo.png"></a>
+        </div>
+        <ul class="form">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./info/intro.html">中心概况</a></li>
+          <li><a href="./members.html">团队成员</a></li>
+          <!-- <li><a href="./events.html">学术活动</a></li>
+          <li><a href="./notice.html">通知公告</a></li> -->
+        </ul>
+      </nav>
+      <div id="showRight" class="mm-menu-toggle">
+      </div>
+    </div>
+  </div>
+  <div id="hideRight">
+  </div>
+  <script type="text/javascript" src="./js/classie.js"></script>
+  <script>
+    var menuRight = document.getElementById( 'cbp-spmenu-s' ),
+    showRight = document.getElementById( 'showRight' ),
+    hideRight = document.getElementById( 'hideRight' ),
+    body = document.body;
+    showRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight").css({
+        display:"block",height:$(document).height()
+      });
+    };
+    hideRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight ").fadeOut(300);
+    };
+    function disableOther( button ) {
+      if( button !== 'showRight' ) {
+        classie.toggle( showRight, 'disabled' );
+      }
+    }
+  </script>
+  <div class="bannerWrap_wc cleafix">
+    <div class="w1200 cleafix">
+      <div class="main_visual">
+        <div class="main_image">
+          <ul>
+            <li><span style="background: url(./img/campus1.jpg) center top no-repeat;background-size:100%"></span></li>
+            <li><span style="background: url(./img/campus2.jpg) center top no-repeat;background-size:100%"></span></li>
+            <li><span style="background: url(./img/campus3.jpg) center top no-repeat;background-size:100%"></span></li>
+          </ul>
+          <a id="btn_prev" href="javascript:;"></a>
+          <a id="btn_next" href="javascript:;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="newsWrap_wc">
+    <div class="news w1200 cleafix">
+      <div id="tab" class="news_list cleafix">
+        <ul class="tab_menu cleafix">
+          <li class="selected">最新动态<b></b></li>
+          <li>通知公告<b></b></li>
+        </ul>
+        <div class="tab_box">
+          <div style="display: block;">
+            <a class="more" href="./events.html"><img src="./img/more.png"></a>
+            <ul class="list cleafix">
+              <li class="cleafix fl">
+                <div class="list_time fl">
+                  <p class="day">01-11</p>
+                  <p class="month">2020</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0001.html" class="tit fl">澳大利亚斯威本科技大学黄晓东教授到我中心进行学术交流</a>
+                  </div>
+                  <p><a href="./events/0001.html">应刘杰老师邀请，澳大利亚斯威本科技大学的黄晓东教授来中心做题为，...[详细]</a></p>
+                </div>
+                </li>
+              <li class="cleafix fl">
+                <div class="list_time fl">
+                  <p class="day">12-18</p>
+                  <p class="month">2019</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0002.html" class="tit fl">西南交通大学康国政教授到我中心进行学术交流</a>
+                  </div>
+                  <p><a href="./events/0002.html">应中心主任文桂林教授邀请，西南交通大学力学与工程学院院长康国政教授到我中心进行学术交流，并做了“重载钢轨轨滚动接触疲劳分析”的学术报告...[详细]</a></p>
+                </div>
+              </li>
+              <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <p class="day">11-26</p>
+                  <p class="month">2019</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0003.html" class="tit fl">上海大学丁虎教授到我中心进行学术交流</a>
+                  </div>
+                  <p><a href="./events/0003.html">应中心主任文桂林教授邀请，上海大学丁虎教授到我中心进行学术交流，...[详细]</a></p>
+                </div>
+              </li> -->
+              <!-- <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <p class="day">01-11</p>
+                  <p class="month">2020</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0004.html" class="tit fl">退而不休怀家国 科教点亮少年志——走近广州大学老专家科技辅导团</a>
+                  </div>
+                  <p><a href="./events/0004.html">日前，全国离退休干部先进集体和先进个人表彰大会在北京举行，大会表彰了150个离退休干部先进集体和450位先进个人，其中，广东省...[详细]</a></p>
+                </div>
+              </li> -->
+            <!-- </ul>
+          </div>
+          <div class="hide" style="display: none;">
+            <a class="more" href="./notice.html"><img src="./img/more.png"></a>
+            <ul class="list cleafix">
+              <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <!-- <p class="day">02-13</p>
+                  <p class="month">2020</p> -->
+                <!-- </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./notice/0001.html" class="tit fl">广州大学文桂林教授团队招聘博士后</a>
+                  </div>
+                  <p><a href="./notice/0001.html">​近广州大学是一所综合性大学(一本),校区在广州市大学城,环境优美,...[详细]</a></p>
+                </div>
+              </li> -->
+              <!-- <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <p class="day">02-13</p>
+                  <p class="month">2020</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./notice/0002.html" class="tit fl">人才招聘信息</a>
+                  </div>
+                  <p><a href="./notice/0002.html">广州大学是以国家重要中心城市“广州”命名的综合性大学，于2000年合并组建，有着...[详细]</a></p>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="activityWrap_wc">
+    <div class="activity w1200">
+      <div class="act_tit cleafix">
+        <h2>团队成员<b></b></h2>
+        <a href="./members.html"><img src="./img/more.png"></a>
+      </div>
+      <div class="act_com act_com1">
+        <div class="hd">
+          <a class="next"></a>
+          <a class="prev"></a>
+        </div>
+        <div class="Img bd">
+          <div class="tempWrap" style="overflow:hidden; position:relative; width:1200px">
+            <ul style="width: 2400px; left: -1200px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+              <li style="float: left; width: 164px;">
+                <a href="./members/dengjun.html"><img src="./img/dengjun_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/dengjun.html">邓军，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/wangdayang.html"><img src="./img/wangdayang_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/wangdayang.html">汪大洋，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/yexijun.html"><img src="./img/yexijun_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/yexijun.html">叶锡钧，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/liuhai.html"><img src="./img/liuhai_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/liuhai.html">刘海，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/wuzhigang.html"><img src="./img/wuzhigang_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/wuzhigang.html">吴志刚，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/caofengfeng.html"><img src="./img/caofengfeng_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/caofengfeng.html">曹飒飒，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/luoweili.html"><img src="./img/photo.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/luoweili.html">罗威力，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/zhoujunyong.html"><img src="./img/zhoujunyong_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/zhoujunyong.html">周军勇，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/panchudong.html"><img src="./img/panchudong.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/panchudong.html">潘楚东，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/yijiang.html"><img src="./img/yijiang_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/yijiang.html">易江，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/heshipei.html"><img src="./img/heshipei_s.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/heshipei.html">何沛衡，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/luyi.html"><img src="./img/photo.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/luyi.html">陆毅，个人简介...</a></div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="linkWrap_wc">
+    <div class="link w1200">
+      <div class="act_tit cleafix">
+        <h2>友情链接<b></b></h2>
+      </div>
+      <div class="link_con cleafix">
+        <div class="links">
+          <dl class="select">
+            <dt>--广州大学--
+              <script language="javascript" src="./js/openlink.js"></script>
+            </dt>
+            <dd>
+              <ul>
+                <li><a href="http://www.gzhu.edu.cn/">------广州大学-------</a></li>
+                <li><a href="http://kyc.gzhu.edu.cn/">------广州大学科研处-------</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerWrap_wc">
+    <div class="footer w1200 cleafix">
+      <div class="footL fl cleafix">
+        <a class="logof fl" href="http://arch.gzhu.edu.cn/index.htm#">
+          <img src="./img/logo2.png">
+        </a>
+        <span class="footjs fl">
+          <p>广州大学智慧交通与安全研究中心<br>地址：广州市番禺区大学城外环西路230号<br>邮编：510006<br>电话：020-39366955<br>Copyright © 2020 版权所有</p>
+        </span>
+      </div>
+      <div class="foot_em fr">
+      </div>
+    </div>
+  </div>
+  <script>jQuery(".act_com1").slide({mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6,trigger:"click"});</script>
+</body>
+</html>
